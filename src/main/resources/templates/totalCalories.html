@@ -1,0 +1,27 @@
+<!doctype html>
+<html xmlns:th="http://thymeleaf.org">
+<html lang="en">
+<script type="text/javascript" th:src="@{/js/calculator.js}"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calories</title>
+</head>
+<body>
+
+<p>Total calories you had: <span id="totalCalories" th:utext="*{totalCalories}"></span></p>
+
+<label>You can burn these calories by:</label>
+<br>
+<label id="running"></label>
+<br>
+<label id="walking"></label>
+<br>
+<label id="cycling"></label>
+<br>
+<label id="swimming"></label>
+
+</body>
+</html>
